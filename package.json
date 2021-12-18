@@ -1,0 +1,33 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "author": "",
+  "scripts": {
+    "build": "turbo run build build:types"
+  },
+  "devDependencies": {
+    "turbo": "^1.0.19"
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "outputs": [
+          "dist/**"
+        ],
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "build:types": {
+        "outputs": [
+          "dist/**"
+        ],
+        "dependsOn": [
+          "^build:types"
+        ]
+      }
+    }
+  }
+}

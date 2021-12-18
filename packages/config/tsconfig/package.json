@@ -1,0 +1,8 @@
+{
+  "name": "@monorepo/tsconfig",
+  "version": "1.0.0",
+  "files": [
+    "base.json",
+    "react.json"
+  ]
+}
