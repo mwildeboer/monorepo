@@ -1,0 +1,4 @@
+{
+  "extends": "@monorepo/tsconfig/react.json",
+  "exclude": ["dist", "node_modules"]
+}

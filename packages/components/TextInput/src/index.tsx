@@ -2,9 +2,9 @@ import React from "react";
 
 export type TextInputHTMLProps = JSX.IntrinsicElements["input"];
 
-export interface TextInputProps extends TextInputHTMLProps {}
+export type TextInputProps = TextInputHTMLProps;
 
 export const TextInput = (props: TextInputProps) => {
-  const { children } = props;
-  return <button type="button">{children}</button>;
+  const { type } = props;
+  return <input type={type} />;
 };

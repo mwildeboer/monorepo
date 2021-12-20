@@ -18,11 +18,7 @@ module.exports = {
               },
               transform: {
                 react: {
-                  pragma: "React.createElement",
-                  pragmaFrag: "React.Fragment",
-                  throwIfNamespace: true,
-                  development: false,
-                  useBuiltins: false,
+                  runtime: "automatic",
                 },
               },
             },

@@ -1,0 +1,7 @@
+{
+  "name": "@monorepo/jest-preset",
+  "version": "1.0.0",
+  "files": [
+    "jest.preset.js"
+  ]
+}
